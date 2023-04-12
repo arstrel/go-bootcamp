@@ -1,4 +1,4 @@
-package strings
+package exercise2
 
 import (
 	"fmt"

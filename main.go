@@ -4,8 +4,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/arstrel/go-bootcamp/strings"
-	"github.com/arstrel/go-bootcamp/variables"
+	exercise3 "github.com/arstrel/go-bootcamp/exercise-iota"
+	exercise2 "github.com/arstrel/go-bootcamp/exercise-strings"
+	exercise1 "github.com/arstrel/go-bootcamp/exercise-variables"
 )
 
 func main() {
@@ -13,55 +14,63 @@ func main() {
 	case "path":
 		SeparatePath(os.Args[2])
 	case "color":
-		variables.Color()
+		exercise1.Color()
 	case "vars":
-		variables.VarsToVars()
+		exercise1.VarsToVars()
 	case "assign":
-		variables.Assign()
+		exercise1.Assign()
 	case "assign2":
-		variables.Assign2()
+		exercise1.Assign2()
 	case "multi":
-		variables.MultiShort()
+		exercise1.MultiShort()
 	case "swapper":
-		variables.Swapper()
+		exercise1.Swapper()
 	case "swapper2":
-		variables.Swapper2()
+		exercise1.Swapper2()
 	case "discard":
-		variables.DiscardFile()
+		exercise1.DiscardFile()
 	case "convert1":
-		variables.Convert1()
+		exercise1.Convert1()
 	case "convert2":
-		variables.Convert2()
+		exercise1.Convert2()
 	case "convert3":
-		variables.Convert3()
+		exercise1.Convert3()
 	case "convert4":
-		variables.Convert4()
+		exercise1.Convert4()
 	case "convert5":
-		variables.Convert5()
+		exercise1.Convert5()
 	case "cli1":
-		variables.CommandLine()
+		exercise1.CommandLine()
 	case "cli2":
-		variables.CommandLine2()
+		exercise1.CommandLine2()
 	case "cli3":
-		variables.CommandLine3()
+		exercise1.CommandLine3()
 	case "cli4":
-		variables.CommandLine4()
+		exercise1.CommandLine4()
 	case "banger":
-		strings.Banger(os.Args[2])
+		exercise2.Banger(os.Args[2])
 	case "winpath":
-		strings.WindowsPath()
+		exercise2.WindowsPath()
 	case "printjson":
-		strings.PrintJSON()
+		exercise2.PrintJSON()
 	case "rawconcat":
-		strings.RawConcat()
+		exercise2.RawConcat()
 	case "countchars":
-		strings.CountChars(os.Args[2])
+		exercise2.CountChars(os.Args[2])
 	case "tolowercase":
-		strings.ToLowercase()
+		exercise2.ToLowercase()
 	case "trimspace":
-		strings.TrimSpace()
+		exercise2.TrimSpace()
 	case "trimright":
-		strings.TrimRight()
+		exercise2.TrimRight()
+	case "timezones":
+		exercise3.Timezones()
+	case "months":
+		exercise3.Months()
+	case "months2":
+		exercise3.Months2()
+	case "seasons":
+		exercise3.Seasons()
 	default:
 		fmt.Println("Unknown operation")
 	}
