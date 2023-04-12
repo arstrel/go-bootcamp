@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/arstrel/go-bootcamp/strings"
 	"github.com/arstrel/go-bootcamp/variables"
 )
 
 func main() {
-	op := os.Args[1]
-	switch op {
+	switch os.Args[1] {
 	case "path":
 		SeparatePath(os.Args[2])
 	case "color":
@@ -46,6 +46,22 @@ func main() {
 		variables.CommandLine3()
 	case "cli4":
 		variables.CommandLine4()
+	case "banger":
+		strings.Banger(os.Args[2])
+	case "winpath":
+		strings.WindowsPath()
+	case "printjson":
+		strings.PrintJSON()
+	case "rawconcat":
+		strings.RawConcat()
+	case "countchars":
+		strings.CountChars(os.Args[2])
+	case "tolowercase":
+		strings.ToLowercase()
+	case "trimspace":
+		strings.TrimSpace()
+	case "trimright":
+		strings.TrimRight()
 	default:
 		fmt.Println("Unknown operation")
 	}
