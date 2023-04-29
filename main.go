@@ -4,7 +4,11 @@ import (
 	"fmt"
 	"os"
 
+	challenges "github.com/arstrel/go-bootcamp/challenges"
+	exerciseflowcontrol "github.com/arstrel/go-bootcamp/exercise-flowcontrol"
 	exercise3 "github.com/arstrel/go-bootcamp/exercise-iota"
+	exerciseother "github.com/arstrel/go-bootcamp/exercise-other"
+	exerciseprint "github.com/arstrel/go-bootcamp/exercise-print"
 	exercise2 "github.com/arstrel/go-bootcamp/exercise-strings"
 	exercise1 "github.com/arstrel/go-bootcamp/exercise-variables"
 )
@@ -69,8 +73,34 @@ func main() {
 		exercise3.Months()
 	case "months2":
 		exercise3.Months2()
-	case "seasons":
+	case "seasons-iota":
 		exercise3.Seasons()
+	case "bio":
+		exerciseprint.PrintBio()
+	case "ifs1":
+		exerciseflowcontrol.SimpleIfs()
+	case "ifs2":
+		exerciseflowcontrol.Simplify()
+	case "ifs3":
+		exerciseflowcontrol.ArgCount()
+	case "ifs4":
+		exerciseflowcontrol.VowelOrConsonant()
+	case "challenge1":
+		challenges.Challenge1()
+	case "challenge2":
+		challenges.Challenge2()
+	case "challenge3":
+		challenges.Challenge3()
+	case "movie":
+		challenges.MoviePGRatingChecker()
+	case "other1":
+		exerciseother.Other1()
+	case "oddoreven":
+		exerciseother.OddOrEven()
+	case "daysinmonth":
+		challenges.DaysInMonth()
+	case "seasons":
+		challenges.Seasons()
 	default:
 		fmt.Println("Unknown operation")
 	}
