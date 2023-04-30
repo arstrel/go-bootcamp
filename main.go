@@ -101,9 +101,11 @@ func main() {
 		challenges.DaysInMonth()
 	case "seasons":
 		challenges.Seasons()
+	case "partsofday":
+		challenges.PartsOfDay()
 	default:
 		fmt.Println("Unknown operation")
 	}
-	fmt.Println("Done")
+	fmt.Println("\nDone")
 
 }
